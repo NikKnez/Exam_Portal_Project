@@ -20,12 +20,6 @@ There are 2 types of profiles that are available in Exam Portal
   - Create Questions
   - View Student-Wise Test Results
 
-- **Teacher Module:**
-  - Register students in the assigned grade.
-  - Schedule exams for courses.
-  - View upcoming and previous exams.
-  - View student results.
-
 - **Student Module:**
   - Attempt Quizzes.
   - Review Quizzes.
