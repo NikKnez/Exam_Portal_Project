@@ -38,8 +38,8 @@ public class ExamPortalApplication implements CommandLineRunner {
 			LOG.info("Admin not found in system, so adding default admin");
 
 			User user = new User();
-			user.setEmailId("demo.admin@demo.com");
-			user.setPassword(passwordEncoder.encode("123456"));
+			user.setEmailId("admin@demo.com");
+			user.setPassword(passwordEncoder.encode("admin123"));
 			user.setRole(UserRole.ROLE_ADMIN.value());
 			user.setStatus(ActiveStatus.ACTIVE.value());
 
