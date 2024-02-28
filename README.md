@@ -4,29 +4,29 @@ The Exam Portal, a Full Stack application built with Spring Boot and React JS, s
 
 ## Features
 
-There are 2 types of profiles that are available in Exam Portal
+- **Administrator Module:**
+  - Add and manage grades.
+  - Add and manage courses within grades.
+  - Register teachers for specific grades.
+  - View all teachers and students.
+  - Schedule exams.
 
-1. Admin – to be used by the Professor
-2. Student
-
-- **Admin Module:**
-  - Create Courses
-  - Modify Courses
-  - Delete Courses
-  - Create Quizzes
-  - Modify Quizzes
-  - Delete Quizzes
-  - Enable Tab Switch Prevention
-  - Create Questions
-  - View Student-Wise Test Results
+- **Teacher Module:**
+  - Register students in the assigned grade.
+  - Schedule exams for courses.
+  - View upcoming and previous exams.
+  - View student results.
 
 - **Student Module:**
-  - Attempt Quizzes.
-  - Review Quizzes.
+  - Register for exams in their assigned grade.
+  - View upcoming exams.
+  - Take exams at scheduled times.
+  - Receive exam results via email.
+  - View exam results.
 
 ## Getting Started
 
-Follow the steps below to set up and run the Online Exam Portal locally.
+Follow the steps below to set up and run the Exam Portal locally.
 
 ### Prerequisites
 
@@ -37,18 +37,18 @@ Follow the steps below to set up and run the Online Exam Portal locally.
 
 1. Clone the repository:
 
-   git clone //
-   cd online-exam-portal
-
+   git clone https://github.com/NikKnez/exam-portal.git
+   cd exam-portal
+   
 
 2. Start the application using Docker Compose:
 
    docker-compose up
-
+   
 
 3. Access the application:
-  - Spring Boot Backend: http://localhost:8080
-  - React Frontend: http://localhost:3000
+   - Spring Boot Backend: http://localhost:8080
+   - React Frontend: http://localhost:3000
 
 4. Stop the application:
 
