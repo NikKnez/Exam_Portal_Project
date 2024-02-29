@@ -12,12 +12,9 @@ import exam_2 from "../images/exam_2.png";
 const HomePage = () => {
 
   const data = [
-    { class: 'Year 4', time: '6 PM to 7 PM', days: 'MON,WED,SAT' },
-    { class: 'Year 5', time: '5 PM to 6 PM', days: 'MON,THUR,SAT' },
-    { class: 'Year 6', time: '7 PM to 8 PM', days: 'WED,THUR,SAT' },
-    { class: 'Year 7', time: '6 PM to 7 PM', days: 'TUE,FRI' },
-    { class: 'Year 8', time: '7 PM to 8 PM', days: 'WED,FRI' },
-    { class: 'GCSE', time: '6 PM to 7 PM', days: 'MON,TUE' },
+    { class: 'Grade A', time: '17:00 to 18:00', days: 'MON, WED, SAT' },
+    { class: 'Grade B', time: '18:00 to 19:00', days: 'MON, THUR, SAT' },
+    { class: 'Grade C', time: '19:00 to 20:00', days: 'WED, THUR, SAT' },
   ];
 
 
@@ -27,8 +24,6 @@ const HomePage = () => {
 
   return (
     <div className="container-fluid mb-2">
-  {/* <Carousel /> */}
-
       <div className="container mt-5">
         <div className="row">
           <div className="col-md-8 text-color">
@@ -37,21 +32,22 @@ const HomePage = () => {
               <br></br>
            
               <h3>
-              Maximize your learning with our personalized sessions
+              Unlock your full potential with our tailored educational sessions
               </h3>
             </p>
             <ul>
 
-<li>3 Weekly sessions, each lasting one hour.</li>
-<li>The syllabus is coverd topic by topic.</li>
-<li>Topic specific exams.</li>
-<li>Mock exams.</li>
-<li>Separate sessions for Year 4, Year 5, Year 6, Year 7, Year 8, Year 9, GCSE and A Level.</li>
+<li>Engaging Weekly Sessions.</li>
+<li>Comprehensive Syllabus Coverage, Topic by Topic.</li>
+<li>Topic-Specific Exams.</li>
+<li>Mock Exams for Effective Preparation</li>
+<li>Dedicated Sessions for Grade 1 to Grade 3.</li>
+<li>Flexible Learning: Individual and Group Sessions.</li>
 
 </ul>
 <br></br>
 
-<h3>We offer both individual and group sessions. </h3>
+<h3>Session Schedule: </h3>
 
 
 
@@ -120,22 +116,7 @@ const HomePage = () => {
           <br></br>
 
             <h1 className="ms-5">Simplify and Upgrade Your skills</h1>
-            {/* <p className="ms-5">
-              Welcome to a hassle-free academic journey with our Online Exam
-              Portal, where navigating assessments is a breeze. Say goodbye to
-              complexities as you effortlessly manage your exams in a
-              user-friendly environment. With a straightforward interface,
-              submitting exams and accessing results becomes a seamless process,
-              all from the comfort of your device.
-            </p>
-            <p className="ms-5">
-              Experience the convenience of streamlined academic assessments.
-              Our platform is designed for simplicity, ensuring you can focus on
-              your exams without unnecessary stress. From straightforward
-              submissions to easy result retrieval, we've made online exams a
-              straightforward and user-friendly experience, redefining how you
-              approach assessments.
-            </p> */}
+          
             <Link to="/user/login" className="btn bg-color custom-bg-text ms-5">
               Get Started
             </Link>
