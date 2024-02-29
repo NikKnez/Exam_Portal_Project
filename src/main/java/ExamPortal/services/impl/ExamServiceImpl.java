@@ -21,13 +21,11 @@ public class ExamServiceImpl implements ExamService {
 
 	@Override
 	public Exam addExam(Exam exam) {
-		// TODO Auto-generated method stub
 		return this.examRepository.save(exam);
 	}
 
 	@Override
 	public Exam updateExam(Exam exam) {
-		// TODO Auto-generated method stub
 		return this.examRepository.save(exam);
 	}
 
@@ -69,7 +67,6 @@ public class ExamServiceImpl implements ExamService {
 
 	@Override
 	public List<Exam> getExamsByGradeAndStartTimeLessThanAndStatus(Grade grade, String startTime, String status) {
-		// TODO Auto-generated method stub
 		return this.examRepository.findByGradeAndStartTimeLessThanAndStatus(grade, startTime, status);
 	}
 

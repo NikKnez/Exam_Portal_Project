@@ -72,7 +72,6 @@ public class UserServiceImpl implements UserService {
 
 	@Override
 	public List<User> getUsersByRoleAndGradeAndStatus(String role, Grade grade, String status) {
-		// TODO Auto-generated method stub
 		return this.userRepository.findByRoleAndGradeAndStatus(role, grade, status);
 	}
 	

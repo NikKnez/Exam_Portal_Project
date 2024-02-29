@@ -18,13 +18,11 @@ public class CourseServiceImpl implements CourseService {
 	
 	@Override
 	public Course addCourse(Course course) {
-		// TODO Auto-generated method stub
 		return courseRepository.save(course);
 	}
 
 	@Override
 	public Course updateCourse(Course course) {
-		// TODO Auto-generated method stub
 		return courseRepository.save(course);
 	}
 
@@ -41,13 +39,11 @@ public class CourseServiceImpl implements CourseService {
 
 	@Override
 	public List<Course> getAllCoursesByStatus(String status) {
-		// TODO Auto-generated method stub
 		return courseRepository.findByStatus(status);
 	}
 
 	@Override
 	public List<Course> getAllCoursesByGradeAndStatus(Grade grade, String status) {
-		// TODO Auto-generated method stub
 		return courseRepository.findByGradeAndStatus(grade, status);
 	}
 

@@ -20,7 +20,6 @@ public class StudentAnswerServiceImpl implements StudentAnswerService {
 
 	@Override
 	public StudentAnswer addAnswer(StudentAnswer answer) {
-		// TODO Auto-generated method stub
 		return studentAnswerRepository.save(answer);
 	}
 
@@ -42,13 +41,11 @@ public class StudentAnswerServiceImpl implements StudentAnswerService {
 
 	@Override
 	public List<StudentAnswer> getAllAnswerByExam(Exam exam) {
-		// TODO Auto-generated method stub
 		return studentAnswerRepository.findByExam(exam);
 	}
 
 	@Override
 	public List<StudentAnswer> addAnswers(List<StudentAnswer> answers) {
-		// TODO Auto-generated method stub
 		return studentAnswerRepository.saveAll(answers);
 	}
 

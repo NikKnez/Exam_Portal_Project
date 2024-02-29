@@ -20,7 +20,6 @@ public class ExamResultServiceImpl implements ExamResultService {
 
 	@Override
 	public ExamResult addResult(ExamResult result) {
-		// TODO Auto-generated method stub
 		return examResultRepository.save(result);
 	}
 
@@ -31,13 +30,11 @@ public class ExamResultServiceImpl implements ExamResultService {
 
 	@Override
 	public List<ExamResult> getResultsByStudentAndExam(User student, Exam exam) {
-		// TODO Auto-generated method stub
 		return examResultRepository.findByStudentAndExam(student, exam);
 	}
 
 	@Override
 	public List<ExamResult> getResultsByExam(Exam exam) {
-		// TODO Auto-generated method stub
 		return examResultRepository.findByExam(exam);
 	}
 
@@ -54,13 +51,11 @@ public class ExamResultServiceImpl implements ExamResultService {
 
 	@Override
 	public List<ExamResult> getResultsByGrade(Grade grade) {
-		// TODO Auto-generated method stub
 		return this.examResultRepository.findByExam_Grade(grade);
 	}
 
 	@Override
 	public List<ExamResult> getAllResults() {
-		// TODO Auto-generated method stub
 		return this.examResultRepository.findAll();
 	}
 
