@@ -22,14 +22,14 @@ services:
       - "3306:3306"
     environment:
       MYSQL_DATABASE: exam_portal
-      MYSQL_ROOT_PASSWORD: // Your MySql Password
+      MYSQL_ROOT_PASSWORD: Nikola07
       MYSQL_USER: root
-      MYSQL_PASSWORD: // Your MySql Password
+      MYSQL_PASSWORD: Nikola07
 
   # React Frontend
   frontend:
     build:
-      context: C:/ // Your Path to React Frontend
+      context: C:\Users\Nikola Knezevic\Desktop\Projects\React\exam-portal
       dockerfile: Dockerfile
     ports:
       - "3000:3000"
