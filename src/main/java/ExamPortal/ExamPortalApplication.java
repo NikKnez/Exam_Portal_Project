@@ -30,7 +30,7 @@ public class ExamPortalApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 
-		User admin = this.userService.getUserByEmailIdAndRoleAndStatus("demo.admin@demo.com",
+		User admin = this.userService.getUserByEmailIdAndRoleAndStatus("admin@demo.com",
 				UserRole.ROLE_ADMIN.value(), ActiveStatus.ACTIVE.value());
 
 		if (admin == null) {
