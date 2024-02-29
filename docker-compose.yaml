@@ -1,4 +1,4 @@
-version: '3.8'
+version: '25.0.3'
 
 services:
   # Spring Boot Backend
@@ -11,7 +11,7 @@ services:
     environment:
       SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/exam_portal
       SPRING_DATASOURCE_USERNAME: root
-      SPRING_DATASOURCE_PASSWORD: Nikola07
+      SPRING_DATASOURCE_PASSWORD: // Your MySql Password
     depends_on:
       - mysql
 
@@ -22,14 +22,14 @@ services:
       - "3306:3306"
     environment:
       MYSQL_DATABASE: exam_portal
-      MYSQL_ROOT_PASSWORD: Nikola07
+      MYSQL_ROOT_PASSWORD: // Your MySql Password
       MYSQL_USER: root
-      MYSQL_PASSWORD: Nikola07
+      MYSQL_PASSWORD: // Your MySql Password
 
   # React Frontend
   frontend:
     build:
-      context: C:/Users/Nikola Knezevic/Desktop/Projects/React/exam-portal
+      context: C:/ // Your Path to React Frontend
       dockerfile: Dockerfile
     ports:
       - "3000:3000"
