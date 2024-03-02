@@ -32,7 +32,8 @@ build/
 ### VS Code ###
 .vscode/
 
+# .gitignore
 # Ignore local configuration files
 application.properties
-docker-compose.yml
+docker-compose.yaml
 
