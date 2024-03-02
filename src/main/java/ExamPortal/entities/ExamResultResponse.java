@@ -1,6 +1,5 @@
-package ExamPortal.dto;
+package ExamPortal.entities;
 
-import ExamPortal.entities.ExamResult;
 import lombok.Getter;
 import lombok.Setter;
 

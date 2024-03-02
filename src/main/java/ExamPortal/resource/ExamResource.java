@@ -1,7 +1,7 @@
 package ExamPortal.resource;
 
-import ExamPortal.dto.AddExamRequest;
-import ExamPortal.dto.CommonApiResponse;
+import ExamPortal.entities.AddExamRequest;
+import ExamPortal.entities.CommonApiResponse;
 import ExamPortal.dto.ExamResponseDto;
 import ExamPortal.entities.*;
 import ExamPortal.exception.GradeSaveFailedException;

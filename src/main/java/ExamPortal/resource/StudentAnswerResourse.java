@@ -1,7 +1,7 @@
 package ExamPortal.resource;
 
 import ExamPortal.dto.QuestionsResponseDto;
-import ExamPortal.dto.StudentAnswerRequest;
+import ExamPortal.entities.StudentAnswerRequest;
 import ExamPortal.entities.*;
 import ExamPortal.exception.ExamResultSaveFailedException;
 import ExamPortal.services.*;

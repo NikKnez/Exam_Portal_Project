@@ -1,6 +1,9 @@
 package ExamPortal.controllers;
 
 import ExamPortal.dto.*;
+import ExamPortal.entities.CommonApiResponse;
+import ExamPortal.entities.UserLoginRequest;
+import ExamPortal.entities.UserLoginResponse;
 import ExamPortal.resource.UserResource;
 import com.fasterxml.jackson.core.JsonProcessingException;
 import org.springframework.beans.factory.annotation.Autowired;

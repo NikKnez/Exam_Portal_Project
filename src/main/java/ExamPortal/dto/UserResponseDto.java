@@ -1,5 +1,6 @@
 package ExamPortal.dto;
 
+import ExamPortal.entities.CommonApiResponse;
 import lombok.Getter;
 import lombok.Setter;
 

@@ -1,6 +1,6 @@
 package ExamPortal.resource;
 
-import ExamPortal.dto.CommonApiResponse;
+import ExamPortal.entities.CommonApiResponse;
 import ExamPortal.dto.GradeResponseDto;
 import ExamPortal.entities.Grade;
 import ExamPortal.exception.GradeSaveFailedException;

@@ -1,6 +1,6 @@
 package ExamPortal.resource;
 
-import ExamPortal.dto.ExamResultResponse;
+import ExamPortal.entities.ExamResultResponse;
 import ExamPortal.entities.*;
 import ExamPortal.services.*;
 import org.slf4j.Logger;

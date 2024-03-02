@@ -1,4 +1,4 @@
-package ExamPortal.dto;
+package ExamPortal.entities;
 
 import lombok.Getter;
 import lombok.Setter;

@@ -1,7 +1,7 @@
 package ExamPortal.resource;
 
-import ExamPortal.dto.AddCourseRequest;
-import ExamPortal.dto.CommonApiResponse;
+import ExamPortal.entities.AddCourseRequest;
+import ExamPortal.entities.CommonApiResponse;
 import ExamPortal.dto.CourseResponseDto;
 import ExamPortal.entities.Course;
 import ExamPortal.entities.Grade;

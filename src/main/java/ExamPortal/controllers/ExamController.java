@@ -1,7 +1,7 @@
 package ExamPortal.controllers;
 
-import ExamPortal.dto.AddExamRequest;
-import ExamPortal.dto.CommonApiResponse;
+import ExamPortal.entities.AddExamRequest;
+import ExamPortal.entities.CommonApiResponse;
 import ExamPortal.dto.ExamResponseDto;
 import ExamPortal.resource.ExamResource;
 import org.springframework.beans.factory.annotation.Autowired;

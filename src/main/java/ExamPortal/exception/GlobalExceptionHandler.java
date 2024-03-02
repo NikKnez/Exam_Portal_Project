@@ -1,6 +1,6 @@
 package ExamPortal.exception;
 
-import ExamPortal.dto.CommonApiResponse;
+import ExamPortal.entities.CommonApiResponse;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;

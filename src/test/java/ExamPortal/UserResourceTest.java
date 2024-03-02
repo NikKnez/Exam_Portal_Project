@@ -1,10 +1,7 @@
 package ExamPortal;
 
 import ExamPortal.dto.*;
-import ExamPortal.entities.Address;
-import ExamPortal.entities.Grade;
-import ExamPortal.entities.User;
-import ExamPortal.exception.UserSaveFailedException;
+import ExamPortal.entities.*;
 import ExamPortal.resource.UserResource;
 import ExamPortal.services.AddressService;
 import ExamPortal.services.GradeService;
@@ -19,13 +16,8 @@ import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.authentication.AuthenticationManager;
-import org.springframework.security.core.GrantedAuthority;
-import org.springframework.security.core.authority.SimpleGrantedAuthority;
-import org.springframework.security.crypto.password.PasswordEncoder;
 
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Objects;
 

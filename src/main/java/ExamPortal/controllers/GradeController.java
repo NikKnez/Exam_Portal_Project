@@ -1,6 +1,6 @@
 package ExamPortal.controllers;
 
-import ExamPortal.dto.CommonApiResponse;
+import ExamPortal.entities.CommonApiResponse;
 import ExamPortal.dto.GradeResponseDto;
 import ExamPortal.entities.Grade;
 import ExamPortal.resource.GradeResource;

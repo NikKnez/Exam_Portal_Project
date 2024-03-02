@@ -1,4 +1,4 @@
-package ExamPortal.dto;
+package ExamPortal.entities;
 
 public class CommonApiResponse {
 

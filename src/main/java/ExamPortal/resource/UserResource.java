@@ -1,9 +1,7 @@
 package ExamPortal.resource;
 
 import ExamPortal.dto.*;
-import ExamPortal.entities.Address;
-import ExamPortal.entities.Grade;
-import ExamPortal.entities.User;
+import ExamPortal.entities.*;
 import ExamPortal.exception.UserSaveFailedException;
 import ExamPortal.services.AddressService;
 import ExamPortal.services.GradeService;

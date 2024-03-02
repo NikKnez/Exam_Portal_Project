@@ -1,6 +1,6 @@
 package ExamPortal.controllers;
 
-import ExamPortal.dto.ExamResultResponse;
+import ExamPortal.entities.ExamResultResponse;
 import ExamPortal.resource.ExamResultResource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;

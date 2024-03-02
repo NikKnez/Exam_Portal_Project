@@ -1,7 +1,6 @@
-package ExamPortal.dto;
+package ExamPortal.entities;
 
 
-import ExamPortal.entities.Question;
 import lombok.Getter;
 import lombok.Setter;
 import org.springframework.util.CollectionUtils;

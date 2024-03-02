@@ -1,7 +1,7 @@
 package ExamPortal.controllers;
 
 import ExamPortal.dto.QuestionsResponseDto;
-import ExamPortal.dto.StudentAnswerRequest;
+import ExamPortal.entities.StudentAnswerRequest;
 import ExamPortal.resource.StudentAnswerResourse;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
