@@ -28,6 +28,14 @@ The Exam Portal, a Full Stack application built with Spring Boot and React JS, s
 
 Follow the steps below to set up and run the Exam Portal locally.
 
+## Configuration
+
+1. Copy the `application.properties.sample` file and rename it to `application.properties`.
+2. Open `application.properties` and replace the placeholder values with your actual database details.
+
+3. Copy the `docker-compose.yml.sample` file and rename it to `docker-compose.yml`.
+4. Open `docker-compose.yml` and replace the placeholder values with your actual database details.
+
 ### Prerequisites
 
 - [Docker](https://docs.docker.com/get-docker/)
