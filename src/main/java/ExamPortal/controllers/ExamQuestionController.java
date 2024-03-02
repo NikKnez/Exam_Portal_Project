@@ -1,6 +1,5 @@
 package ExamPortal.controllers;
 
-//import io.swagger.v3.oas.annotations.Operation;
 import ExamPortal.dto.AddQuestionDto;
 import ExamPortal.dto.QuestionsResponseDto;
 import ExamPortal.resource.ExamQuestionResource;
@@ -17,13 +16,13 @@ public class ExamQuestionController {
 	private ExamQuestionResource examQuestionResource;
 	
 	@PostMapping("/add")
-	//@Operation(summary = "Api to add exam question")
+	// Api to add exam question
 	public ResponseEntity<QuestionsResponseDto> addExamQuestion(@RequestBody AddQuestionDto request) {
 		return examQuestionResource.addExamQuestion(request);
 	}
 	
 	@DeleteMapping("/delete")
-	// @Operation(summary = "Api to delete exam question")
+	// Api to delete exam question
 	public ResponseEntity<QuestionsResponseDto> deleteQuestion(@RequestParam("questionId") int questionId) {
 		return examQuestionResource.deleteExamQuestion(questionId);
 	}
