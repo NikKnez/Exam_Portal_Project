@@ -277,10 +277,10 @@ const AddExamForm = () => {
                     name="examType"
                   >
                     <option value="0">Select Exam Type</option>
-                    <option value="Multiple"> Multiple </option>
-                    <option value="Spell"> Spell </option>
-                    <option value="Blanks"> Blanks </option>
-                    <option value="Blanks"> Match  </option>
+                    <option value="Easy"> Easy </option>
+                    <option value="Medium"> Medium </option>
+                    <option value="Hard"> Hard </option>
+                    <option value="Pro"> Pro  </option>
                   </select>
                 </div>
 

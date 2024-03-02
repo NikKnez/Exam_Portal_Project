@@ -48,16 +48,16 @@ const ViewStudentOngoingExams = () => {
  
   // Determine which view to render based on the variableValue
   switch (exam.examType) {
-    case 'Multiple':
+    case 'Easy':
       navigate("/exam/student/attempt", { state: exam });
       break;
-    case 'Spell':
+    case 'Medium':
       navigate("/exam/student/attemptSpell", { state: exam });
       break;
-    case 'Blanks':
+    case 'Hard':
       navigate("/exam/student/attemptBlanks", { state: exam });
       break;
-    case 'Match':
+    case 'Pro':
       navigate("/exam/student/attemptSpell", { state: exam });
       break;
     default:
