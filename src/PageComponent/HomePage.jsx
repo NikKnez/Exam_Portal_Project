@@ -12,9 +12,9 @@ import exam_2 from "../images/exam_2.png";
 const HomePage = () => {
 
   const data = [
-    { class: 'Grade A', time: '17:00 to 18:00', days: 'MON, WED, SAT' },
-    { class: 'Grade B', time: '18:00 to 19:00', days: 'MON, THUR, SAT' },
-    { class: 'Grade C', time: '19:00 to 20:00', days: 'WED, THUR, SAT' },
+    { class: 'Grade 1 (Beginners)', time: '17:00 to 18:00', days: 'MON, WED, SAT' },
+    { class: 'Grade 2 (Intermediate)', time: '18:00 to 19:00', days: 'MON, THUR, SAT' },
+    { class: 'Grade 3 (Professionals)', time: '19:00 to 20:00', days: 'WED, THUR, SAT' },
   ];
 
 
