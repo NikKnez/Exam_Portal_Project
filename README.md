@@ -33,8 +33,8 @@ Follow the steps below to set up and run the Exam Portal locally.
 1. Copy the `application.properties.sample` file and rename it to `application.properties`.
 2. Open `application.properties` and replace the placeholder values with your actual database details.
 
-3. Copy the `docker-compose.yml.sample` file and rename it to `docker-compose.yml`.
-4. Open `docker-compose.yml` and replace the placeholder values with your actual database details.
+3. Copy the `docker-compose.yaml.sample` file and rename it to `docker-compose.yaml`.
+4. Open `docker-compose.yaml` and replace the placeholder values with your actual database details.
 
 ### Prerequisites
 
