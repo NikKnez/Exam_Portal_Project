@@ -1,0 +1,37 @@
+version: '25.0.3'
+
+services:
+  # Spring Boot Backend
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8080:8080"
+    environment:
+      SPRING_DATASOURCE_URL: jdbc:mysql://mysql:3306/exam_portal
+      SPRING_DATASOURCE_USERNAME: ${db.username}
+      SPRING_DATASOURCE_PASSWORD: ${db.password}
+    depends_on:
+      - mysql
+
+  # MySQL Database
+  mysql:
+    image: mysql:latest
+    ports:
+      - "3306:3306"
+    environment:
+      MYSQL_DATABASE: exam_portal
+      MYSQL_ROOT_PASSWORD: ${db.password}
+      MYSQL_USER: ${db.username}
+      MYSQL_PASSWORD: ${db.password}
+
+  # React Frontend
+  frontend:
+    build:
+      context: C:\Users\Your Path to React Frontend folder
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    depends_on:
+      - backend
