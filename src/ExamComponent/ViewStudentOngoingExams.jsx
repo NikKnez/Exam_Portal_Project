@@ -122,29 +122,13 @@ const ViewStudentOngoingExams = () => {
                         <b>{exam.course.name}</b>
                       </td>
 
-
-
-                      {/* <td>
-                        <b>
-                          {formatDateFromEpoch(exam.startTime) +
-                            "-" +
-                            formatDateFromEpoch(exam.endTime)}
-                        </b>
-                      </td> */}
-
                       <td>
                         <b>{exam.duration}</b>
                       </td>
                       
                       <td>
                         <b>{exam.examType}</b>
-                      </td>
-                      
-
-
-
-
-
+                      </td>    
                       <td>
                         {(() => {
                           if (exam.message === "Submitted") {

@@ -38,7 +38,7 @@ const AddGradeForm = () => {
             });
 
             setTimeout(() => {
-              navigate("/home");
+              window.location.href = "/home";
             }, 2000); // Redirect after 3 seconds
           } else if (!res.success) {
             toast.error(res.responseMessage, {
@@ -51,7 +51,7 @@ const AddGradeForm = () => {
               progress: undefined,
             });
             setTimeout(() => {
-              window.location.reload(true);
+              window.location.href = "/home";
             }, 2000); // Redirect after 3 seconds
           } else {
             toast.error("It Seems Server is down!!!", {
@@ -64,7 +64,7 @@ const AddGradeForm = () => {
               progress: undefined,
             });
             setTimeout(() => {
-              window.location.reload(true);
+              window.location.href = "/home";
             }, 2000); // Redirect after 3 seconds
           }
         });
@@ -81,7 +81,7 @@ const AddGradeForm = () => {
           progress: undefined,
         });
         setTimeout(() => {
-          window.location.reload(true);
+          window.location.href = "/home";
         }, 1000); // Redirect after 3 seconds
       });
     e.preventDefault();

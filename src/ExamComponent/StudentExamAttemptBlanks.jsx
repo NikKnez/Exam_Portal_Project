@@ -34,16 +34,7 @@ const StudentExamAttemptBlanks = () => {
     return (
      
       <div className="left-panel" style={{ height: "600px", overflowY: "auto" }} >
-        {/* PDF viewer component */}
-        {/* <iframe src={require('./../resourcesfiles/SpTest1.pdf')} width="100%" height="100%"></iframe> */}
-
-        {/* <iframe src='/resourceFiles/maths/SAT Buster_B_T5.pdf' width="100%" height="100%"></iframe> */}
-        {/* <iframe src="file:///E:/Dheekshi/sa.pdf" width="100%" height="100%"></iframe> */}
-
         <iframe src={exam.path} width="100%" height="100%"></iframe>
-        {/* <iframe src="file:///E:/Dheekshi%20School/SATs/Maths/CGP%20book/Tests/SAT%20Buster_A_T1.pdf" width="100%" height="100%"></iframe> */}
-        {/* Not allowed to load local resource: file:///E:/Dheekshi%20School/SandA.pdf */}
-       {/* // file:///E:/Dheekshi%20School/SandA.pdf */}
       </div>
     );
   };

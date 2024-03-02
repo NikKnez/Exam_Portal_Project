@@ -29,21 +29,9 @@ const QuestionSpellCard = (props) => {
       </div>
       <div className="row">
         <div className="col-6">
-          {/* <h6 className="option">
-            {"1." + convertStringToArray(question.options)[0]}
-          </h6> */}
-          {/* <h6 className="option">
-            {"2." + convertStringToArray(question.options)[1]}
-          </h6> */}
+       
         </div>
-        {/* <div className="col-6">
-          <h6 className="option">
-            {"3." + convertStringToArray(question.options)[2]}
-          </h6>
-          <h6 className="option">
-            {"4." + convertStringToArray(question.options)[3]}
-          </h6>
-        </div> */}
+      
       </div>
       <div className="row">
         <b className="col">

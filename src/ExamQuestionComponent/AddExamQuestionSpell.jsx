@@ -213,7 +213,7 @@ const AddExamQuestionSpell = ({ exam }) => {
                 progress: undefined,
               });
               setTimeout(() => {
-                window.location.reload(true);
+                window.location.href = "/home";
               }, 2000); // Redirect after 3 seconds
             } else {
               toast.error("It Seems Server is down!!!", {
@@ -226,7 +226,7 @@ const AddExamQuestionSpell = ({ exam }) => {
                 progress: undefined,
               });
               setTimeout(() => {
-                window.location.reload(true);
+                window.location.href = "/home";
               }, 2000); // Redirect after 3 seconds
             }
           });
@@ -243,7 +243,7 @@ const AddExamQuestionSpell = ({ exam }) => {
             progress: undefined,
           });
           setTimeout(() => {
-            window.location.reload(true);
+            window.location.href = "/home";
           }, 1000); // Redirect after 3 seconds
         });
     }

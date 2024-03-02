@@ -33,44 +33,16 @@ const StudentExamAttemptSpell = () => {
 
   const [answers, setAnswers] = useState({});
 
-  //const [answers, setAnswers] = useState({});
-
-
-  /*
-    const handleChange = (index, value) => {
-      setAnswers(prevAnswers => {
-        const newValues = [...prevValues];
-        newValues[index] = value;
-        return newValues;
-      });
-    };
-  */
-
-  /*
-  
-    const handleCheckboxChange = (questionId, optionIndex) => {
-      setAnswers((prevAnswers) => ({
-        ...prevAnswers,
-        [questionId]: optionIndex,
-      }));
-    };
-  
-  */
-
 
   const handleChange = (questionId, value) => {
     setAnswers((prevAnswers) => ({
       ...prevAnswers,
       [questionId]: value,
     }));
-   // console.log('Handle on Change'); 
-  //  console.log(questionId); 
-   // console.log(value); 
-
+   
     console.log('Handle Answers'); 
     console.log(answers); 
 
-   // console.log(answers); 
   };
 
 
@@ -85,7 +57,6 @@ const StudentExamAttemptSpell = () => {
         options,
         marks,
         status,
-       // studentAnswer: answers[id] !== undefined ? answers[id] : 4,
         studentAnswer: answers[id],
       })
 
@@ -101,7 +72,6 @@ const StudentExamAttemptSpell = () => {
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
-        //    Authorization: "Bearer " + admin_jwtToken,
       },
       body: JSON.stringify({
         examId: exam.id,
@@ -123,7 +93,7 @@ const StudentExamAttemptSpell = () => {
             });
 
             setTimeout(() => {
-              navigate("/home"); // sending added exam object
+              window.location.href = "/home"; // sending added exam object
             }, 2000); // Redirect after 3 seconds
           } else if (!res.success) {
             toast.error(res.responseMessage, {
@@ -136,7 +106,7 @@ const StudentExamAttemptSpell = () => {
               progress: undefined,
             });
             setTimeout(() => {
-              window.location.reload(true);
+              window.location.href = "/home";
             }, 2000); // Redirect after 3 seconds
           } else {
             toast.error("It Seems Server is down!!!", {
@@ -149,7 +119,7 @@ const StudentExamAttemptSpell = () => {
               progress: undefined,
             });
             setTimeout(() => {
-              window.location.reload(true);
+              window.location.href = "/home";
             }, 2000); // Redirect after 3 seconds
           }
         });
@@ -166,7 +136,7 @@ const StudentExamAttemptSpell = () => {
           progress: undefined,
         });
         setTimeout(() => {
-          window.location.reload(true);
+          window.location.href = "/home";
         }, 1000); // Redirect after 3 seconds
       });
   };
@@ -204,8 +174,6 @@ const StudentExamAttemptSpell = () => {
                 {exam.name + " - " + exam.grade.name + " - " + exam.course.name}
               </span>
 
-              {/* <CountdownTimer endTime={exam.endTime} /> */}
-
               <CountdownTimer endTime={exam.duration} />
 
             </h5>
@@ -232,18 +200,7 @@ const StudentExamAttemptSpell = () => {
                             .split("#")
                             .map((option, optionIndex) => (
                               <div key={optionIndex} className="form-check">
-                                {/* 
-
-                                <input
-                                  className="form-check-input"
-                                  type="checkbox"
-                                  checked={answers[id] === optionIndex}
-                                  onChange={() =>
-                                    handleCheckboxChange(id, optionIndex)
-                                  }
-                                /> */}
-
-                                {/* {optionIndex + 1} */}
+                          
 
                                 <div class="mb-3">
                                   <label for="title" class="form-label">

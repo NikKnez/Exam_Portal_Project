@@ -57,14 +57,12 @@ const AddExamForm = () => {
   const saveExam = (e) => {
     examRequest.startTime = new Date(startTime).getTime();
     examRequest.endTime = new Date(endTime).getTime();
-  // examRequest.duration = duration ; 
 
     fetch(url + "/exam/add", {
       method: "POST",
       headers: {
         Accept: "application/json",
         "Content-Type": "application/json",
-        //    Authorization: "Bearer " + admin_jwtToken,
       },
       body: JSON.stringify(examRequest),
     })
@@ -96,7 +94,7 @@ const AddExamForm = () => {
               progress: undefined,
             });
             setTimeout(() => {
-              window.location.reload(true);
+              window.location.href = "/home";
             }, 2000); // Redirect after 3 seconds
           } else {
             toast.error("It Seems Server is down!!!", {
@@ -109,7 +107,7 @@ const AddExamForm = () => {
               progress: undefined,
             });
             setTimeout(() => {
-              window.location.reload(true);
+              window.location.href = "/home";
             }, 2000); // Redirect after 3 seconds
           }
         });
@@ -126,7 +124,7 @@ const AddExamForm = () => {
           progress: undefined,
         });
         setTimeout(() => {
-          window.location.reload(true);
+          window.location.href = "/home";
         }, 1000); // Redirect after 3 seconds
       });
     e.preventDefault();

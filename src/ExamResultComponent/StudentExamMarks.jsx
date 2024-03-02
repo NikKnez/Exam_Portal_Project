@@ -33,12 +33,6 @@ const StudentExamMarks = ({ examResult }) => {
                 </p>
               </div>
               <div className="col-md-6">
-                {/* <p className="mb-2">
-                  <b>Exam Timing:</b>{" "}
-                  {formatDateFromEpoch(result.exam.startTime) +
-                    "-" +
-                    formatDateFromEpoch(result.exam.endTime)}
-                </p> */}
               </div>
             </div>
             <div className="row mt-4">

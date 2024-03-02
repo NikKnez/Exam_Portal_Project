@@ -8,7 +8,7 @@ const HeaderTeacher = () => {
   const teacher = JSON.parse(sessionStorage.getItem("active-teacher"));
 
   const userLogout = () => {
-    toast.success("logged out!!!", {
+    toast.success("Logged out!!!", {
       position: "top-center",
       autoClose: 1000,
       hideProgressBar: false,
@@ -19,9 +19,8 @@ const HeaderTeacher = () => {
     });
     sessionStorage.removeItem("active-teacher");
     sessionStorage.removeItem("teacher-jwtToken");
-    window.location.reload(true);
     setTimeout(() => {
-      navigate("/home");
+      window.location.href = "/home";
     }, 2000); // Redirect after 3 seconds
   };
 
@@ -82,7 +81,7 @@ const HeaderTeacher = () => {
           <b className="text-color">Student Results</b>
         </Link>
       </li>
-      <li className="nav-item">
+      {teacher && teacher.grade && (<li className="nav-item">
         <Link
           to={`/admin/grade/${teacher.grade.id}/course/`}
           className="nav-link active"
@@ -91,6 +90,7 @@ const HeaderTeacher = () => {
           <b className="text-color">View Courses</b>
         </Link>
       </li>
+  )}
       <li class="nav-item">
         <div class="nav-link active" aria-current="page">
           <b className="text-color" onClick={viewProfile}>
@@ -105,6 +105,7 @@ const HeaderTeacher = () => {
           class="nav-link active"
           aria-current="page"
           onClick={userLogout}
+          navigate 
         >
           <b className="text-color">Logout</b>
         </Link>

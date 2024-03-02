@@ -42,28 +42,7 @@ const ViewExamQuestions = () => {
 
         {selectedView}
 
-
-
           
-          {/* <AddExamQuestion exam={exam} /> */}
-          {/* <AddExamQuestionSpell exam={exam} />
-          <div>
-            {console.log('Writing the contents ')}
-            {console.log(exam)}; 
-            {console.log('Writing the Exam id ')}
-            {console.log(exam.id)}; 
-            {console.log('Writing the Cource id ')}
-            {console.log(exam.course.id)}; 
-            {console.log('Trying to fetch exam type  ')}
-            {console.log(exam.course)}; 
-
-            {console.log('Trying to fetch exam type corrected one')}
-            {console.log(exam.examType)}; 
-          </div> */}
-
-
-
-
         </div>
 
         <div class="col-sm-8 mt-2">

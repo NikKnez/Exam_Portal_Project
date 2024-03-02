@@ -8,7 +8,7 @@ const HeaderStudent = () => {
   const student = JSON.parse(sessionStorage.getItem("active-student"));
 
   const userLogout = () => {
-    toast.success("logged out!!!", {
+    toast.success("Logged out!!!", {
       position: "top-center",
       autoClose: 1000,
       hideProgressBar: false,
@@ -19,9 +19,8 @@ const HeaderStudent = () => {
     });
     sessionStorage.removeItem("active-student");
     sessionStorage.removeItem("student-jwtToken");
-    window.location.reload(true);
     setTimeout(() => {
-      navigate("/home");
+      window.location.href = "/home";
     }, 2000); // Redirect after 3 seconds
   };
 

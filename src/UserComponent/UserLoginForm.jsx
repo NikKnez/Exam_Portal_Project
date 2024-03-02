@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 
 import { config } from '../ConsantsFile/Constants';
 const url = config.url.BASE_URL;
@@ -109,11 +109,6 @@ const UserLoginForm = () => {
         });
       });
     e.preventDefault();
-  };
-
-  const handleLogout = () => {
-  
-    navigate("/home");
   };
 
   return (

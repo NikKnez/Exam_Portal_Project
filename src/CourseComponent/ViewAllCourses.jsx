@@ -65,7 +65,7 @@ const ViewAllCourses = () => {
             });
 
             setTimeout(() => {
-              window.location.reload(true);
+              window.location.href = "/home";
             }, 1000); // Redirect after 3 seconds
           } else if (!res.success) {
             toast.error(res.responseMessage, {
@@ -78,7 +78,7 @@ const ViewAllCourses = () => {
               progress: undefined,
             });
             setTimeout(() => {
-              window.location.reload(true);
+              window.location.href = "/home";
             }, 1000); // Redirect after 3 seconds
           }
         });
@@ -95,7 +95,7 @@ const ViewAllCourses = () => {
           progress: undefined,
         });
         setTimeout(() => {
-          window.location.reload(true);
+          window.location.href = "/home";
         }, 1000); // Redirect after 3 seconds
       });
   };

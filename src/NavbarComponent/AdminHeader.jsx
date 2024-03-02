@@ -1,3 +1,4 @@
+import { React } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -9,7 +10,7 @@ const AdminHeader = () => {
   console.log(user);
 
   const adminLogout = () => {
-    toast.success("logged out!!!", {
+    toast.success("Logged out!!!", {
       position: "top-center",
       autoClose: 1000,
       hideProgressBar: false,
@@ -19,12 +20,12 @@ const AdminHeader = () => {
       progress: undefined,
     });
     sessionStorage.removeItem("active-admin");
-    sessionStorage.removeItem("admin-jwtToken");
-    window.location.reload(true);
-    setTimeout(() => {
-      navigate("/home");
-    }, 2000); // Redirect after 3 seconds
+    sessionStorage.removeItem("admin_jwtToken");
+     setTimeout(() => {
+      window.location.href = "/home";
+     }, 2000);
   };
+
   return (
     <ul class="navbar-nav ms-auto mb-2 mb-lg-0 me-5">
       <li class="nav-item">

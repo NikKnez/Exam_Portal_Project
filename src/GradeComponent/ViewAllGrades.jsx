@@ -54,7 +54,7 @@ const ViewAllGrades = () => {
             });
 
             setTimeout(() => {
-              window.location.reload(true);
+              window.location.href = "/home";
             }, 1000); // Redirect after 3 seconds
           } else if (!res.success) {
             toast.error(res.responseMessage, {
@@ -67,7 +67,7 @@ const ViewAllGrades = () => {
               progress: undefined,
             });
             setTimeout(() => {
-              window.location.reload(true);
+              window.location.href = "/home";
             }, 1000); // Redirect after 3 seconds
           }
         });
@@ -84,7 +84,7 @@ const ViewAllGrades = () => {
           progress: undefined,
         });
         setTimeout(() => {
-          window.location.reload(true);
+          window.location.href = "/home";
         }, 1000); // Redirect after 3 seconds
       });
   };
