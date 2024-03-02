@@ -39,7 +39,7 @@ public class ExamPortalApplication implements CommandLineRunner {
 
 			User user = new User();
 			user.setEmailId("admin@demo.com");
-			user.setPassword(passwordEncoder.encode("admin123"));
+			user.setPassword(passwordEncoder.encode("admin1234"));
 			user.setRole(UserRole.ROLE_ADMIN.value());
 			user.setStatus(ActiveStatus.ACTIVE.value());
 

@@ -59,14 +59,14 @@ public class UserResource {
 		CommonApiResponse response = new CommonApiResponse();
 
 		if (registerRequest == null) {
-			response.setResponseMessage("user is null");
+			response.setResponseMessage("User is null");
 			response.setSuccess(false);
 
 			return new ResponseEntity<CommonApiResponse>(response, HttpStatus.BAD_REQUEST);
 		}
 
 		if (registerRequest.getEmailId() == null || registerRequest.getPassword() == null) {
-			response.setResponseMessage("missing input");
+			response.setResponseMessage("Missing input");
 			response.setSuccess(false);
 
 			return new ResponseEntity<CommonApiResponse>(response, HttpStatus.BAD_REQUEST);
@@ -91,7 +91,7 @@ public class UserResource {
 		existingUser = this.userService.addUser(user);
 
 		if (existingUser == null) {
-			response.setResponseMessage("failed to register admin");
+			response.setResponseMessage("Failed to register admin");
 			response.setSuccess(false);
 
 			return new ResponseEntity<CommonApiResponse>(response, HttpStatus.BAD_REQUEST);
@@ -112,7 +112,7 @@ public class UserResource {
 		CommonApiResponse response = new CommonApiResponse();
 
 		if (request == null) {
-			response.setResponseMessage("user is null");
+			response.setResponseMessage("User is null");
 			response.setSuccess(false);
 
 			return new ResponseEntity<CommonApiResponse>(response, HttpStatus.BAD_REQUEST);
@@ -121,14 +121,14 @@ public class UserResource {
 		User existingUser = this.userService.getUserByEmailAndStatus(request.getEmailId(), ActiveStatus.ACTIVE.value());
 
 		if (existingUser != null) {
-			response.setResponseMessage("User with this Email Id already resgistered!!!");
+			response.setResponseMessage("User with this Email Id already registered!!!");
 			response.setSuccess(false);
 
 			return new ResponseEntity<CommonApiResponse>(response, HttpStatus.BAD_REQUEST);
 		}
 
 		if (request.getRole() == null) {
-			response.setResponseMessage("bad request ,Role is missing");
+			response.setResponseMessage("Bad request, Role is missing");
 			response.setSuccess(false);
 
 			return new ResponseEntity<CommonApiResponse>(response, HttpStatus.BAD_REQUEST);
@@ -141,7 +141,7 @@ public class UserResource {
 		if (request.getRole().equals(UserRole.ROLE_STUDENT.value())
 				|| request.getRole().equals(UserRole.ROLE_TEACHER.value())) {
 			if (request.getGradeId() == 0) {
-				response.setResponseMessage("bad request ,Grade Id missing");
+				response.setResponseMessage("Bad request, Grade Id missing");
 				response.setSuccess(false);
 
 				return new ResponseEntity<CommonApiResponse>(response, HttpStatus.BAD_REQUEST);
@@ -150,7 +150,7 @@ public class UserResource {
 			grade = this.gradeService.getGradeById(request.getGradeId());
 
 			if (grade == null) {
-				response.setResponseMessage("bad request ,Grade Id missing");
+				response.setResponseMessage("Bad request, Grade Id missing");
 				response.setSuccess(false);
 
 				return new ResponseEntity<CommonApiResponse>(response, HttpStatus.BAD_REQUEST);
@@ -268,7 +268,7 @@ public class UserResource {
 		UserResponseDto response = new UserResponseDto();
 
 		if (role == null) {
-			response.setResponseMessage("missing role");
+			response.setResponseMessage("Missing role");
 			response.setSuccess(false);
 			return new ResponseEntity<UserResponseDto>(response, HttpStatus.BAD_REQUEST);
 		}
@@ -306,14 +306,14 @@ public class UserResource {
 		CommonApiResponse response = new CommonApiResponse();
 
 		if (request == null) {
-			response.setResponseMessage("bad request, missing data");
+			response.setResponseMessage("Bad request, missing data");
 			response.setSuccess(false);
 
 			return new ResponseEntity<CommonApiResponse>(response, HttpStatus.BAD_REQUEST);
 		}
 
 		if (request.getUserId() == 0) {
-			response.setResponseMessage("bad request, user id is missing");
+			response.setResponseMessage("Bad request, User id is missing");
 			response.setSuccess(false);
 
 			return new ResponseEntity<CommonApiResponse>(response, HttpStatus.BAD_REQUEST);
@@ -425,7 +425,7 @@ public class UserResource {
 		CommonApiResponse response = new CommonApiResponse();
 
 		if (userId == 0) {
-			response.setResponseMessage("user id missing");
+			response.setResponseMessage("User id missing");
 			response.setSuccess(false);
 			return new ResponseEntity<CommonApiResponse>(response, HttpStatus.BAD_REQUEST);
 		}
