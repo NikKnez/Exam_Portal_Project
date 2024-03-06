@@ -1,18 +1,15 @@
 package ExamPortal.entities;
 
+import lombok.Getter;
+import lombok.Setter;
+
+@Setter
+@Getter
 public class CommonApiResponse {
 
 	private String responseMessage;
 
 	private boolean isSuccess;
-
-	public String getResponseMessage() {
-		return responseMessage;
-	}
-
-	public void setResponseMessage(String responseMessage) {
-		this.responseMessage = responseMessage;
-	}
 
 	public boolean isSuccess() {
 		return isSuccess;
