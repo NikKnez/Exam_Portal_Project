@@ -102,7 +102,7 @@ public class ExamQuestionResource {
 		}
 		
 		response.setQuestions(questions);
-		response.setResponseMessage("Exam Question Added Successful");
+		response.setResponseMessage("Exam Question Added Successfully");
 		response.setSuccess(true);
 
 		return new ResponseEntity<QuestionsResponseDto>(response, HttpStatus.OK);

@@ -23,9 +23,9 @@ import java.util.ArrayList;
 import java.util.List;
 
 @Component
-public class StudentAnswerResourse {
+public class StudentAnswerResource {
 
-	private final Logger LOG = LoggerFactory.getLogger(StudentAnswerResourse.class);
+	private final Logger LOG = LoggerFactory.getLogger(StudentAnswerResource.class);
 
 	@Autowired
 	private StudentAnswerService studentAnswerService;

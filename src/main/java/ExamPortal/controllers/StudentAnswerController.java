@@ -2,7 +2,7 @@ package ExamPortal.controllers;
 
 import ExamPortal.dto.QuestionsResponseDto;
 import ExamPortal.entities.StudentAnswerRequest;
-import ExamPortal.resource.StudentAnswerResourse;
+import ExamPortal.resource.StudentAnswerResource;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -13,12 +13,12 @@ import org.springframework.web.bind.annotation.*;
 public class StudentAnswerController {
 	
 	@Autowired
-	private StudentAnswerResourse studentAnswerResourse;
+	private StudentAnswerResource studentAnswerResource;
 	
 	@PostMapping("/add")
 	// Api to add student answers
 	public ResponseEntity<QuestionsResponseDto> addExamQuestion(@RequestBody StudentAnswerRequest request) {
-		return studentAnswerResourse.addStudentAnswers(request);
+		return studentAnswerResource.addStudentAnswers(request);
 	}
 
 }
