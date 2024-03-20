@@ -61,6 +61,20 @@ Follow the steps below to set up and run the Exam Portal locally.
 
    docker-compose down
 
+## Screenshots
+
+![Screenshot_1](frontend/src/images/Screenshot_1.png)
+
+![Screenshot_2](frontend/src/images/Screenshot_2.png)
+
+![Screenshot_3](frontend/src/images/Screenshot_3.png)
+
+![Screenshot_4](frontend/src/images/Screenshot_4.png)
+
+![Screenshot_5](frontend/src/images/Screenshot_5.png)
+
+![Screenshot_6](frontend/src/images/Screenshot_6.png)
+
 ## Contributing
 
 Contributions are welcome! Please fork the repository and create a pull request for any enhancements or bug fixes.
