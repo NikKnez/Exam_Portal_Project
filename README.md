@@ -45,7 +45,7 @@ Follow the steps below to set up and run the Exam Portal locally.
 
 1. Clone the repository:
 
-   git clone [Exam_Portal_Project]([https://github.com/NikKnez/ExamPortal.git](https://github.com/NikKnez/Exam_Portal_Project))
+   git clone [https://github.com/NikKnez/ExamPortal.git](https://github.com/NikKnez/Exam_Portal_Project)
    
 
 2. Start the application using Docker Compose:
