@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: ExamPortal.StudentAnswerServiceImplTest
 -------------------------------------------------------------------------------
-Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.068 s - in ExamPortal.StudentAnswerServiceImplTest
+Tests run: 6, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.099 s - in ExamPortal.StudentAnswerServiceImplTest

@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: ExamPortal.UserServiceImplTest
 -------------------------------------------------------------------------------
-Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.089 s - in ExamPortal.UserServiceImplTest
+Tests run: 11, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.093 s - in ExamPortal.UserServiceImplTest
