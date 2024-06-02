@@ -1,8 +1,5 @@
 HELP.md
-target/
-!.mvn/wrapper/maven-wrapper.jar
-!**/src/main/**/target/
-!**/src/test/**/target/
+
 
 ### STS ###
 .apt_generated
@@ -34,6 +31,5 @@ build/
 
 # .gitignore
 # Ignore local configuration files
-application.properties
-docker-compose.yaml
+docker-compose.yaml.sample2
 
