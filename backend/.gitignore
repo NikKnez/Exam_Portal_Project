@@ -31,5 +31,5 @@ build/
 
 # .gitignore
 # Ignore local configuration files
-docker-compose.yaml.sample2
+docker-compose.yaml
 
