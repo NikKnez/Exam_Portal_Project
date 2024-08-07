@@ -75,6 +75,10 @@ Follow the steps below to set up and run the Exam Portal locally.
 
 ![Screenshot_6](frontend/src/images/Screenshot_6.png)
 
+## Live Demo
+
+[Check out the live demo](https://examportalonline.netlify.app) of the Exam Portal.
+
 ## Contributing
 
 Contributions are welcome! Please fork the repository and create a pull request for any enhancements or bug fixes.
